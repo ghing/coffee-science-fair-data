@@ -115,3 +115,14 @@ def parse_heart_rate_data(files=None):
                         'time': record_time.time(),
                         'heart_rate': record_data.value,
                     })
+
+
+COFFEE_SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/10v7fFHJ1G4B18z7ntPwT2c_WjVRLqKA_MWvO63XwIIE/edit'
+                   
+
+@task
+def download_coffee_data():
+    # TODO: Use the Drive API to programatically download the data in Excel
+    # format 
+    print("Go to {0} and choose File > Download as > Microsoft Excel".format(
+          COFFEE_SPREADSHEET_URL))

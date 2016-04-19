@@ -16,6 +16,12 @@ Installation
     cd coffee-science-fair-data
     pip install -r requirements.txt
 
+Install wxPython, which *might* be needed by `matplotlib`.
+
+    pip install --upgrade --pre -f http://wxpython.org/Phoenix/snapshot-builds/ wxPython_Phoenix
+
+I use `matplotlib` for some exploratory charting.  The `notebook` backend shouldn't require `wxPython`, but it gives me errors when I try to use it.  So, I just installed wxPython.  Only the development version of wxPython works with Python 3, and is easily installable using pip in a virtualenv, so I used the above command to install it. wxPython might have some system-level requirements that you'll have to install with Homebrew.
+
 
 Data pipeline
 -------------
