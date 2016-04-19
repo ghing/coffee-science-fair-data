@@ -1,1 +1,2 @@
 invoke==0.12.2
+git+https://github.com/ghing/python-fitparse.git@fix-setup-python3
